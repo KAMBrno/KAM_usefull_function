@@ -8,50 +8,14 @@ body,
   overflow: hidden;
 }
 
-#pikacu {
-  display: flex;
-  flex-direction: column;
+.kam-layerlist__layer-title {
+    
+  margin-left: 20px;
 }
 
-.kam-layerlist__flex-row {
-  display: flex;
-  align-items: center;
-
-  cursor: pointer;
+.kam-layerList__opacity{
+  margin: 20px;
+  margin-bottom: 0;
 }
 
 
-.kam-layerlist__sublayer{
-  background-color: #d9d9d9;
-  margin: 1px;
-}
-.kam-layerlist__sublayer:hover{
-  background-color: #d9d9d9;
-  margin: 1px;
-}
-
-.kam-layerlist__sublayer-icons{
-  margin: 5px;
-
-}
-
-.kam-layerlist__sublayer-title {
-  margin: 0;
-}
-
-.kam-layerlist__layer{
-  
-  height: 30px;
-  justify-content: flex-start;
-  padding-left: 10px;
-}
-.kam-layerlist__layer > input{
-  margin-right: 10px;
-}
-.layerList-active{
-    background-color: #adabab;
-}
-#layetList__container{
-  width: 350px;
-  background-color: white;
-}

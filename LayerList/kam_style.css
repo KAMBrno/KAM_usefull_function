@@ -1,0 +1,219 @@
+.kam-layerlist__flex-row {
+    display: flex;
+    align-items: center;
+  
+    cursor: pointer;
+  }
+  
+  .kam-layerList__opacity{
+    margin-top: 20px;
+    
+  }
+  
+  .kam-layerList__opacity > p{
+    width: 100%;
+  text-align: center;
+  }
+  
+  
+  .kam-layerList__layersGroup {
+    padding-bottom: 20px;
+    
+  }
+  .kam-layerList__layersGroup-first{
+    padding-top: 20px;
+  }
+  
+  
+  .kam-layerlist__sublayer{
+    background-color: #d9d9d9;
+    margin: 1px;
+    width: 90%;
+    margin-left: 20px;
+  }
+  .kam-layerlist__sublayer:hover{
+    background-color: #a0a0a0;
+    
+  }
+  
+  .kam-layerlist__sublayer-icons{
+    margin: 5px;
+  
+  }
+  
+  .kam-layerlist__sublayer-title {
+    margin: 0;
+    
+  }
+
+  .kam-layerlist__layer-title::before {
+    
+    margin-right: 20px;
+  }
+  
+  .kam-layerlist__layer{
+    
+    height: 30px;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+  .kam-layerlist__layer > input{
+    margin-right: 10px;
+  }
+  .layerList-active{
+      background-color: #adabab;
+  }
+  #layetList__container{
+    width: 350px;
+    background-color: white;
+  }
+  
+  /* Input checkbox */
+  input[type=checkbox] + .kam-layerlist__layer-title {
+    display: block;
+        cursor: pointer;
+        max-width: 70vw;
+        
+    }
+  
+    input[type=checkbox] {
+        display: none;
+    }
+    
+    input[type=checkbox] + .kam-layerlist__layer-title:before {
+        content: "\2714";
+        border: 0.1em solid #000;
+        border-radius: 0.2em;
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        padding-left: 0.2em;
+        padding-bottom: 0.3em;
+        margin-right: 15px;
+        vertical-align: bottom;
+        color: transparent;
+        -webkit-transition: .2s;
+        transition: .2s;
+    }
+    
+    input[type=checkbox] + .kam-layerlist__layer-title:active:before {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    
+    input[type=checkbox]:checked + .kam-layerlist__layer-title:before {
+        background-color: #FD4D3F;
+        border-color: #FD4D3F;
+        color: #fff;
+    
+    }
+    
+    input[type=checkbox]:disabled + .kam-layerlist__layer-title:before {
+        -webkit-transform: scale(1);
+        border-color: #aaa;
+    }
+    
+    input[type=checkbox]:checked:disabled + .kam-layerlist__layer-title:before {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        background-color: #FD4D3F;
+        border-color: #FD4D3F;
+        opacity: 0.8;
+    }
+    
+    /* Input range */
+    
+    input[type=range] {
+        width: 300px;
+    }
+    
+    input[type=range] {
+        -webkit-appearance: none;
+        width: 100%;
+    }
+    
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+    }
+    
+    input[type=range]:focus {
+        outline: none;
+    }
+    
+    input[type=range]::-ms-track {
+        width: 100%;
+        cursor: pointer;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+    }
+    
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 26px;
+        width: 26px;
+        background: #555;
+        cursor: pointer;
+        margin-top: -6px;
+        border-radius: 5px;
+    }
+    
+    input[type=range]::-moz-range-thumb {
+        height: 26px;
+        width: 26px;
+        background: #555;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    input[type=range]::-ms-thumb {
+        height: 26px;
+        width: 26px;
+        background: #555;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 12px;
+        cursor: pointer;
+        background: #ccc;
+    }
+    
+    input[type=range]:active::-webkit-slider-runnable-track {
+        background: #d6d6d6;
+    }
+    
+    input[type=range]::-moz-range-track {
+        width: 100%;
+        height: 12px;
+        cursor: pointer;
+        background: #ccc;
+    }
+    
+    input[type=range]::-ms-track {
+        width: 100%;
+        height: 12px;
+        cursor: pointer;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+    }
+    
+    input[type=range]::-ms-fill-lower {
+        background: #ccc;
+    }
+    
+    input[type=range]:focus::-ms-fill-lower {
+        background: #ddd;
+    }
+    
+    input[type=range]::-ms-fill-upper {
+        background: #ccc;
+    }
+    
+    input[type=range]:focus::-ms-fill-upper {
+        background: #ddd;
+    }
